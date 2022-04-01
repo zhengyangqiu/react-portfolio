@@ -4,34 +4,54 @@ import LogoS from '../../assets/images/logo-s.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faHome,faUser} from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
-const SideBar = ()=>(
+const SideBar = () => (
     <div className="nav-bar">
-      
+
         {/* //to home page */}
         <Link className="logo" to='/'>
             <img src={LogoS} alt="logo" />
-            <img className = "sub-logo" src={LogoSubtitle} alt="slogan" />
+            <img className="sub-logo" src={LogoSubtitle} alt="slogan" />
         </Link>
 
         <nav>
 
-            <NavLink exact="true" activeClassname="active" to="/" >
-                <FontAwesomeIcon icon={faHome} color="#4d4d4e"/>
+            <NavLink exact="true" activeclassname="active" to="/" >
+                <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
 
             </NavLink>
 
-            <NavLink exact="true" activeClassname="active" className="about-link" to="/about" >
+            <NavLink exact="true" activeclassname="active" className="about-link" to="/about" >
                 <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
 
             </NavLink>
 
-            <NavLink exact="true" activeClassname="active" className="contact-link"to="/contact" >
+            <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact" >
                 <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
 
             </NavLink>
         </nav>
+
+        <ul>
+            <li>
+                <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/zhengyangqiu/'>
+                    <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel='noreferrer' href='https://github.com/zhengyangqiu'>
+                    <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+                </a>
+            </li>
+
+            <li>
+                <a target="_blank" rel='noreferrer' href=''>
+                    <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
+                </a>
+            </li>
+        </ul>
 
     </div>
 )
