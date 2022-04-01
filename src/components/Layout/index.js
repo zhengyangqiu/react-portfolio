@@ -1,5 +1,5 @@
 import './index.scss';
-import SideBar from '../SiderBar';
+import SideBar from '../SideBar';
 
 const Layout = ()=>{
     return ( 
@@ -12,5 +12,5 @@ const Layout = ()=>{
 
 export default Layout
 
-//add comment 
+
 

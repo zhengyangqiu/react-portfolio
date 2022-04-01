@@ -8,6 +8,7 @@ import {faHome,faUser} from '@fortawesome/free-solid-svg-icons';
 
 const SideBar = ()=>(
     <div className="nav-bar">
+      
         {/* //to home page */}
         <Link className="logo" to='/'>
             <img src={LogoS} alt="logo" />
